@@ -11,6 +11,8 @@ class Rover {
               this.orientation = 'E'
             } else if (this.orientation === 'E') {
               this.orientation = 'N'
+            } else if (this.orientation === 'W') {
+                this.orientation = 'S'
             } else {
               this.orientation = 'W'
             }

@@ -15,7 +15,7 @@ test("should create a rover on mars", () => {
 });
 
 test("should change orientation with a single left rotation", () => {
-  const parameters = [{start: 'N', finish: 'W'}, {start: 'S', finish: 'E'}, {start: 'E', finish: 'N'}]
+  const parameters = [{start: 'N', finish: 'W'}, {start: 'S', finish: 'E'}, {start: 'E', finish: 'N'}, {start: 'W', finish: 'S'}]
   parameters.forEach(parameter => {
     // Arrange
     const rover = new Rover(parameter.start, 0, 0)
