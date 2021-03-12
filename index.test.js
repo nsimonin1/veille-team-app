@@ -1,5 +1,15 @@
-const sum = require("./index");
+const Rover = require("./index");
 
-test("should return sum of two number", () => {
-  expect(sum(1, 2)).toBe(3);
+test("should create a rover on mars", () => {
+  // Arrange
+  const rover = new Rover('N', 0, 0)
+  const instructions = []
+
+  // Act
+  rover.move(instructions)
+
+  // Assert
+  expect(rover.orientation).toEqual('N')
+  expect(rover.x).toEqual(0)
+  expect(rover.y).toEqual(0)
 });
