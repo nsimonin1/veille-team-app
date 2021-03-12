@@ -41,3 +41,17 @@ test("should change orientation from south to east with a single left rotation",
   expect(rover.x).toEqual(0)
   expect(rover.y).toEqual(0)
 });
+
+test("should change orientation from east to north with a single left rotation", () => {
+  // Arrange
+  const rover = new Rover('E', 0, 0)
+  const instructions = ['left']
+
+  // Act
+  rover.move(instructions)
+
+  // Assert
+  expect(rover.orientation).toEqual('N')
+  expect(rover.x).toEqual(0)
+  expect(rover.y).toEqual(0)
+});
