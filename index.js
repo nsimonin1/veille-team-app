@@ -7,7 +7,11 @@ class Rover {
 
     move(instructions) {
         if(instructions[0] === 'left') {
-            this.orientation = 'W'
+            if (this.orientation === 'S') {
+                this.orientation = 'E'
+            } else {
+                this.orientation = 'W'
+            }
         }
     }
 }
